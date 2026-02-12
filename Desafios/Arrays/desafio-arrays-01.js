@@ -7,8 +7,17 @@ Escreva um algoritmo que recebe um array de números inteiros, procure o maior v
 */
 
 function getMaxNumber(numbers) {
-  // Desenvolva seu código nessa função
-  return // Retorne o resultado aqui
+  let highestNumber = 0;
+
+  for (let index = 0; index < numbers.length; ++index) {
+    if (numbers[index] > highestNumber) {
+      highestNumber = numbers[index];
+    }
+  }
+
+  return highestNumber;
 }
+
+getMaxNumber([22, 65, 80, 1, 4]);
 
 module.exports = getMaxNumber;
