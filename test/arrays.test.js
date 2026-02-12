@@ -20,32 +20,32 @@ const {
 
 describe("Desafios de Arrays.", () => {
   describe("01 - Testando a Função getMaxNumber.", () => {
-    it("Ao passar o argumento [3, 1, 8, 34, 13, 2, 5], deve retornar: 34", () => {
-      expect(getMaxNumber([3, 1, 8, 34, 13, 2, 5])).toBe(34);
+    it("Ao passar o argumento [22, 65, 80, 1, 4], deve retornar: 80", () => {
+      expect(getMaxNumber([22, 65, 80, 1, 4])).toBe(80);
     });
-    it("Ao passar o argumento [-8, 12, 13, 84, -100, 45, 38], deve retornar: 84", () => {
-      expect(getMaxNumber([-8, 12, 13, 84, -100, 45, 38])).toBe(84);
+    it("Ao passar o argumento [-22, 65, -80, 1, 4], deve retornar: 65", () => {
+      expect(getMaxNumber([-22, 65, -80, 1, 4])).toBe(65);
     });
   });
 
   describe("02 - Testando a Função getMinNumber.", () => {
-    it("Ao passar o argumento [3, 1, 8, 34, 13, 2, 5], deve retornar: 1", () => {
-      expect(getMinNumber([3, 1, 8, 34, 13, 2, 5])).toBe(1);
+    it("Ao passar o argumento [875, 65, 42, 100, 12, 77], deve retornar: 12", () => {
+      expect(getMinNumber([875, 65, 42, 100, 12, 77])).toBe(12);
     });
-    it("Ao passar o argumento [-8, 12, 13, 84, -100, 45, 38], deve retornar: -100", () => {
-      expect(getMinNumber([-8, 12, 13, 84, -100, 45, 38])).toBe(-100);
+    it("Ao passar o argumento [-875, 65, -42, 100, 12, 77], deve retornar: -875", () => {
+      expect(getMinNumber([-875, 65, -42, 100, 12, 77])).toBe(-875);
     });
   });
 
   describe("03 - Testando a Função findGuest.", () => {
-    it("Ao passar os argumentos ['Silvia', 'Isa', 'Mica', 'Amanda'] e 'Mica', deve retornar: 'O nome está na lista.'", () => {
-      expect(findGuest(['Silvia', 'Isa', 'Mica', 'Amanda'], 'Mica')).toBe(
+    it("Ao passar os argumentos ['Sara', 'Gabriel', 'Maria', 'Davi', 'Julio'], e 'Davi', deve retornar: 'O nome está na lista.'", () => {
+      expect(findGuest(['Sara', 'Gabriel', 'Maria', 'Davi', 'Julio'], 'Davi')).toBe(
         "O nome está na lista."
       );
     });
-    it("Ao passar os argumentos ['Bruna', 'Joaquim', 'Julia', 'Amanda'] e 'Daniel', deve retornar: 'O nome não está na lista.'", () => {
-      expect(findGuest(['Silvia', 'Isa', 'Mica', 'Amanda'], 'Daniel')).toBe(
-        'O nome não está na lista.'
+    it("Ao passar os argumentos ['Sara', 'Gabriel', 'Maria', 'Davi', 'Julio'], e 'Antônio', deve retornar: 'O nome não está na lista.'", () => {
+      expect(findGuest(["Sara", "Gabriel", "Maria", "Davi", "Julio"], "Antônio")).toBe(
+        "O nome não está na lista."
       );
     });
   });
